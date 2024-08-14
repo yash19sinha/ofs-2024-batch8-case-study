@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "salary": 50000
+  },
+  {
+    "id": 2,
+    "name": "Yash Sinha",
+    "salary": 50000
+  },
+  {
+    "id": 3,
+    "name": "Aditya Soni",
+    "salary": 55000
+  },
+  {
+    "id": 4,
+    "name": "Anand bhai",
+    "salary": 55000
+  },
+  {
+    "id": 5,
+    "name": "Aryan bhai",
+    "salary": 65000
+  }
+]
