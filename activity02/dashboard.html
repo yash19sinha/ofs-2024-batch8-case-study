@@ -1,0 +1,42 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding" id="dark-container">
+  
+  <oj-switch
+                  label-hint="Dark background"
+                  id="contrastBgSwitch"
+                  value="{{isContrastBackground}}"></oj-switch>
+
+
+   <oj-c-radioset full-width="true" label-hint="Max Columns" value="{{maxColumnsString}}" aria-controls="myform" options="[[maxColumnsOptions]]"></oj-c-radioset>
+ 
+   
+   <oj-c-form-layout max-columns="[[maxColumns]]" direction="row" full-width="true">
+     
+     <oj-c-input-text id="text-input" value="{{firstName}}" label-hint="Enter First Name" label-edge="inside"></oj-c-input-text>
+  
+    <oj-c-input-number value="{{salary}}" label-hint="Enter Salary" min="0" max="100000000" step="0"></oj-c-input-number>
+  
+    <oj-c-input-password value="{{password}}" label-hint="enabled" disabled="false"></oj-c-input-password>
+  
+    <oj-input-date value="{{value}}" label-hint="Enabled" autocomplete="off"></oj-input-date>
+  
+  </oj-c-form-layout>
+  
+  <h3>
+    Hey! <oj-bind-text value="[[firstName]]"></oj-bind-text> 
+  </h3>
+  <h3>
+    Your Salary is <oj-bind-text value="[[salary]]"></oj-bind-text>
+  </h3>
+  <h3>
+    Your password is <oj-bind-text value="[[password]]"></oj-bind-text>
+  </h3>
+  <h3>
+    Your Date is <oj-bind-text value="[[value]]"></oj-bind-text>
+  </h3>
+
+</div>
