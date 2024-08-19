@@ -1,0 +1,15 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Login</h1>
+  <oj-c-form-layout max-columns="2" direction="row" full-width="true">
+    <oj-c-input-number id="loginIdInput" value="{{loginId}}" label-hint="Enter Id" label-edge="inside"></oj-c-input-number>
+    <oj-c-input-password id="passwordInput" value="{{password}}" label-hint="Enter password"
+      label-edge="inside"></oj-c-input-password>
+    <oj-c-button id="addButton" on-oj-action="[[addRow]]" label="Sign Up"
+      disabled="[[loginId() == null || password() == null ]]"></oj-c-button>
+  </oj-c-form-layout>
+</div>

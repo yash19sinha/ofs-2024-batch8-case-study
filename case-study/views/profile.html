@@ -1,0 +1,38 @@
+<div class="oj-hybrid-padding">
+    <oj-switch id="disabledSwitchOn" value="{{updateSwitch}}" label-hint="Update Data"
+                disabled="false"></oj-switch>
+        <center>
+        <h1>Customer Details with Customer ID: <span data-bind="text: customerId"></span></h1>
+        
+        <oj-c-form-layout max-columns="2" label-edge="inside">
+            <!-- Bind the value of firstName to the observable -->
+            <oj-c-input-text disabled="[[!updateSwitch()]]" id="firstNameInput" value="{{firstName}}"
+                label-hint="First Name"></oj-c-input-text>
+            <oj-c-input-text disabled="[[!updateSwitch()]]" id="lastNameInput" value="{{lastName}}"
+                label-hint="Last Name"></oj-c-input-text>
+            <!-- <oj-c-input-text disabled="true" id="ageInput" value="{{age}}" label-hint="Age"></oj-c-input-text> -->
+            <oj-c-input-text disabled="[[!updateSwitch()]]" id="genderInput" value="{{gender}}"
+                label-hint="Gender"></oj-c-input-text>
+            <oj-c-input-text disabled="[[!updateSwitch()]]" id="mobileInput" value="{{mobile}}"
+                label-hint="Mobile"></oj-c-input-text>
+            <oj-c-input-text disabled="[[!updateSwitch()]]" id="emailInput" value="{{email}}"
+                label-hint="Email"></oj-c-input-text>
+            <!-- <oj-c-input-text disabled="true" id="addressInput" value="{{address}}"
+                label-hint="Address"></oj-c-input-text> -->
+            <!-- <oj-c-input-text disabled="true" id="panInput" value="{{pan}}" label-hint="PAN"></oj-c-input-text>
+            <oj-c-input-text disabled="true" id="aadharInput" value="{{aadhar}}" label-hint="Aadhar"></oj-c-input-text> -->
+            <oj-c-input-text disabled="true" id="loginInput" value="{{loginId}}" label-hint="Login"></oj-c-input-text>
+            <oj-c-input-password disabled="[[!updateSwitch()]]" value="{{password}}"
+                label-hint="Enter your password"></oj-c-input-password>
+            <oj-c-input-text disabled="true" id="loginStatusInput" value="{{loginStatus}}"
+                label-hint="Login Status"></oj-c-input-text>
+            <!-- <oj-c-input-text disabled="true" id="aadharInput" value="{{loginTime}}" -->
+            <!-- label-hint="Login Time"></oj-c-input-text> -->
+        
+            <!-- <oj-c-button id="button1" on-oj-action="[[updateCustomerDetails]]" disabled="[[!updateSwitch()]]" label="Update"></oj-c-button> -->
+        </oj-c-form-layout>
+        <oj-c-button id="button1" on-oj-action="[[updateCustomerDetails]]" disabled="[[!updateSwitch()]]" label="Update"></oj-c-button>
+        <!-- <div class="update-switch">
+        </div> -->
+    </center>
+</div>

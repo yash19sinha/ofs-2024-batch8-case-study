@@ -1,0 +1,43 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding" id="dark-container">
+  
+  <oj-switch
+                  label-hint="Dark background"
+                  id="contrastBgSwitch"
+                  value="{{isContrastBackground}}"></oj-switch>
+
+  
+
+   <oj-c-radioset full-width="true" label-hint="Max Columns" value="{{maxColumnsString}}" aria-controls="myform" options="[[maxColumnsOptions]]"></oj-c-radioset>
+ 
+   <oj-progress-bar id="progressBar" value="{{fieldProgress()}}"></oj-progress-bar>
+   
+   <oj-c-form-layout max-columns="[[maxColumns]]" direction="row" full-width="true">
+
+    <oj-c-input-number class="id-input"  value="{{id}}" label-hint="Enter ID" min="0" max="10" step="0"></oj-c-input-number>
+     
+     <oj-c-input-text class="firstName-input" id="text-input" value="{{firstName}}" label-hint="Enter First Name" label-edge="inside"></oj-c-input-text>
+
+     <oj-c-input-text class="username-input" id="text-input" value="{{username}}" label-hint="Enter First Name" label-edge="inside"></oj-c-input-text>
+
+     <oj-c-input-text class="address-input" id="text-input" value="{{address}}" label-hint="Enter Address" label-edge="inside"></oj-c-input-text>
+
+     <oj-c-input-text class="email-input" id="text-input" value="{{email}}" label-hint="Enter Email" label-edge="inside"></oj-c-input-text>
+  
+    <oj-c-input-number class="salary-input" value="{{salary}}" label-hint="Enter Salary" min="0" max="100000000" step="0"></oj-c-input-number>
+  
+    <oj-c-input-password class="password-input" value="{{password}}" label-hint="Enter Password" disabled="false"></oj-c-input-password>
+  
+    <oj-input-date class="date-input" value="{{value}}" label-hint="Enabled" autocomplete="off"></oj-input-date>
+    
+
+
+          
+
+  
+
+</div>

@@ -1,0 +1,13 @@
+<div class="oj-hybrid-padding">
+    <h1>Register</h1>
+    <oj-c-form-layout max-columns="2" direction="row" full-width="true">
+      <oj-c-input-text id="firstNameInput" value="{{firstName}}" label-hint="Enter First Name" label-edge="inside"></oj-c-input-text>
+      <oj-c-input-text id="lastNameInput" value="{{lastName}}" label-hint="Enter Last Name" label-edge="inside"></oj-c-input-text>
+      <oj-c-input-text id="genderInput" value="{{gender}}" label-hint="Enter Gender" label-edge="inside"></oj-c-input-text>
+      <oj-c-input-text id="emailInput" value="{{email}}" label-hint="Enter Email" label-edge="inside"></oj-c-input-text>
+      <oj-c-input-number id="mobileInput" value="{{mobile}}" label-hint="Enter Mobile Number" label-edge="inside"></oj-c-input-number>
+      <oj-c-input-password id="passwordInput" value="{{password}}" label-hint="Enter Password" label-edge="inside"></oj-c-input-password>
+      <oj-c-button id="registerButton" on-oj-action="[[addRow]]" label="Sign Up"
+        disabled="[[firstName() == null || lastName() == null || gender() == null || email() == null || mobile() == null || password() == null]]"></oj-c-button>
+    </oj-c-form-layout>
+  </div>
