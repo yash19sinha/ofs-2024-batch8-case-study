@@ -26,6 +26,7 @@ import 'ojs/ojswitch';
 import "oj-c/button";
 import "ojs/ojprogress-bar";
 import "ojs/ojcheckboxset";
+import "my-component/loader";
 
 
 
