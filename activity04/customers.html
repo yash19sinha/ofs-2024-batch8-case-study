@@ -1,0 +1,28 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+  <h1>Customers Content Area</h1>
+  <oj-table
+    id="table"
+    data="[[dataprovider]]"
+    class="demo-table-container"
+    columns-default='{"sortable": "disabled"}'
+    columns='[
+      {"headerText": "Employee Id", "field": "id", "id": "id"},
+      {"headerText": "Name", "field": "name", "id": "name"},
+      {"headerText": "Salary", "field": "salary", "id": "salary"}
+    ]'
+  >
+  </oj-table>
+  <h1>Add Employee</h1>
+  <oj-c-form-layout max-columns="2" direction="row" full-width="true">
+    <oj-c-input-text id="nameIdInput" value="{{name}}" label-hint="Enter Name" label-edge="inside"></oj-c-input-text>
+    <oj-c-input-number id="salaryIdInput" value="{{salary}}" label-hint="Enter Salary"
+      label-edge="inside"></oj-c-input-number>
+    <oj-c-button id="addButton" on-oj-action="[[addRow]]" label="Sign Up"
+      disabled="[[name() == null || salary() == null ]]"></oj-c-button>
+  </oj-c-form-layout>
+</div>
